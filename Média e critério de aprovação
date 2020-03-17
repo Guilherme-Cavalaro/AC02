@@ -1,0 +1,24 @@
+p1 = float (input())
+p2 = float (input())
+p3 = float (input())
+f  = float (input())
+
+mediap = round((p1*2+p2*2+p3*3)/7,1)
+
+print ('Frequencia: {:.0f}%'.format(f*100))
+print ('Media: {:.1f}'.format(mediap))
+
+if(f<0.75):
+    print ('Aluno reprovado por faltas!')
+
+elif(mediap>9 and f>= 0.75):
+    print ('Aluno aprovado com louvor!')
+
+elif(mediap>=6 and mediap<= 9 and f>=0.75):
+    print ('Aluno aprovado!')
+
+elif(mediap>=4 and mediap<6 and f>=0.75):
+    print ('Aluno de recuperação!')
+
+elif(mediap<4 and f>=0.75):
+    print ('Aluno reprovado!')
